@@ -96,13 +96,15 @@ app.post('/login', (req, res, next) => {
         failureFlash: true
     })(req, res, next)
 })
-
-app.get('/logout', (req, res) => {
+                                                         
+app.get('/logout', (req, res) => { 
     req.logout()
     res.redirect('/')
     console.log('Usuário desconectado com sucesso')
 })
 
+/* Aqui é onde o usuário irá fazer a alteração dos dados cadastrados ||
+                                                                    \ / */
 app.post('/update', (req, res) => {
     db.findOne({_id: req.body.id}).then(atualizar => {
         const usuario = req.body.usuario
