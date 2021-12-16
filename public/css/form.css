@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'Teko-Light';
+    src: url('../font/Teko-Light.ttf');
+}
+
+body {
+    background: linear-gradient(90deg,#474986 0,#516ba7 48%,#474986 100%,#7db9e8 0);
+}
+
+.formulario {
+    background-color: skyblue;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    background-image: radial-gradient( circle 1224px at 10.6% 8.8%,  rgba(255,255,255,1) 0%, rgba(153,202,251,1) 100.2% );
+    padding: 90px;
+    color: black;
+    transition: 0.2s;
+}
+
+.formulario:hover {
+    border-radius: 15px;
+    border: solid 3px skyblue;
+}
+
+h1 {
+    text-align: left;
+    font-family: 'Teko-Light';
+    font-size: 38px;
+    margin-left: 16px;
+    margin-bottom: 50px;
+}
+
+input {
+    padding: 20px;
+    width: 250px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    color: black;
+    transition: 0.2s;
+    border-radius: 10px;
+    margin-left: 10px;
+ }
+
+ input:hover {
+    border-radius: 24px;
+ }
+
+ button {
+    width: 80%;
+    padding: 20px;
+    background-color: dodgerblue;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 34px;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+
+button:hover {
+   background-color: deepskyblue;
+   border-radius: 24px;
+}
+
+.box {
+    background-color: white;
+    border: solid 2px skyblue;
+    color: red;
+    text-align: center;
+    width: 180px;
+    margin-left: 62px;
+    font-family: "Teko-Light";
+    font-size: 18px;
+}
+
+.labelemail {
+    color: red;
+    text-align: center;
+    font-family: "Teko-Light";
+    font-size: 18px;
+}
+
+.labelusuario {
+    color: red;
+    text-align: center;
+    font-family: "Teko-Light";
+    font-size: 18px;
+}
+
+.labelsenha {
+    color: red;
+    text-align: center;
+    font-family: "Teko-Light";
+    font-size: 18px;
+}
+
+.logar {
+    font-family: "Teko-Light";  
+    display: flex;
+    justify-content: center;
+    font-size: 28px;  
+    margin-top: 20px;
+    transition: 0.4s;
+}
+
+.logar:hover {
+    color: black;
+}
+
+.rocket {
+    position: absolute;
+    left: 57%;
+    top: 24%;
+    width: 500px;
+} 
+
+.error {
+    border: solid 2px red;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.facebook {
+    margin-right: 10px;
+    transition: 0.2s;
+}
+
+.instagram {
+    transition: 0.2s;
+}
+
+.linkedin {
+    margin-right: 10px;
+    transition: 0.2s;
+}
+
+.linkedin:hover {
+    background-color: white;
+    padding: 3px;
+}
+
+.facebook:hover {
+    background-color: skyblue;
+    padding: 3px;
+}
+
+.instagram:hover {
+    background-color: orange;
+    padding: 3px;
+}
+
+.linha {
+    margin-left: 15px;
+    margin-top: 30px;
+    border: solid 2px skyblue;
+}
+
+.sucesso {
+    color: green;
+    font-size: 20px;
+    font-family: "Teko-Light";
+    transition: 0.6s;
+}
+
+.animacao {
+    margin-left: 70px;
+}
+
+@media (max-width: 700px) {
+    body {
+        height: 100vh;
+    }
+
+    .formulario {
+        background-color: skyblue;
+        width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        background-image: radial-gradient( circle 1224px at 10.6% 8.8%,  rgba(255,255,255,1) 0%, rgba(153,202,251,1) 100.2% );
+        color: black;
+        transition: 0.2s;
+        padding: 5px;
+        margin-left: 48px;
+    }
+
+    input {
+        padding: 12px;
+        width: 250px;
+        margin-bottom: 15px;
+        outline: none;
+        border: none;
+        font-size: 15px;
+        color: black;
+        transition: 0.2s;
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+
+    .button {
+        width: 50%;
+        margin-left: 80px;
+    }
+
+    .rocket {
+        display: none;
+    }
+
+}

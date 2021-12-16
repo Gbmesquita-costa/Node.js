@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/form.css">
+    <link rel="shortcut icon" href="imgs/rocket.png" type="image/x-icon">
+    <title>Login</title>
+</head>
+<body>
+    <div class="linha">
+
+    </div>
+    <form action="/update" class="formulario" method="post">
+        <h1>Atualizar</h1>
+        <input type="hidden" name="id" value="<%= user.id %>">
+
+        <label for="email" class="labelemail"></label>
+        <input type="email" name="email" class="email" value="<%= user.email %>" placeholder="Digite o novo E-mail">
+
+        <br>
+
+        <label for="usuario" class="labelusuario"></label>
+        <input type="text" name="usuario" class="usuario" value="<%= user.usuario %>" placeholder="Digite o novo nome de usuário">
+
+        <br>
+
+        <label for="senha" class="labelsenha"></label>
+        <input type="password" name="senha" class="senha" placeholder="Digite a nova senha">
+        <br>
+        <button class="button">Atualizar</button>
+
+        <div class="sucesso">
+
+        </div>
+    </form>
+    <div class="rocket">
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js"></script>
+    <script src="js/atualizar.js"></script>
+    <script src="js/animacao.js"></script>
+</body>
+</html>

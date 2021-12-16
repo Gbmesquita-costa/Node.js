@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="shortcut icon" href="imgs/rocket.png" type="image/x-icon">
+    <title>Registro</title>
+</head>
+<body>
+    <form action="/registrar" class="formulario" method="post">
+        <h1>Crie sua conta</h1>
+        <label for="email" class="labelemail"></label>
+
+        <input type="email" name="email" class="email" placeholder="Preencha o seu E-mail">
+        
+        <br>
+
+        <label for="usuario" class="labelusuario"></label>
+
+        <input type="text" name="usuario" class="usuario" placeholder="Preencha seu nome de usuário">
+
+        <br>
+
+        <label for="senha" class="labelsenha"></label>
+        <input type="password" name="senha" class="senha" placeholder="Preencha sua senha de usuário">
+
+        <br>
+        <button class="button">Registrar</button>
+        <br>
+        <div class="sucesso"></div>
+        <div class="box"></div>
+        <div>
+            <a href="/logar" class="logar">Login</a>
+        </div>
+    </form>
+    <div class="rocket">
+        <div class="foguete"></div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js"></script>
+    <script src="js/servico.js"></script>
+    <script src="js/animacao.js"></script>  
+</body>
+</html>

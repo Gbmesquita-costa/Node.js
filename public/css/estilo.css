@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'Teko-Light';
+    src: url('../font/Teko-Light.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 140px 100px 1fr ;
+    grid-template-rows: 80px 1fr 80px 65px;
+    grid-template-areas: 
+        'logo navegar navegar' 
+        'box box box'
+        'rodapé rodapé rodapé'
+        'subrodapé subrodapé subrodapé'
+    ;
+}
+
+.navegação {
+    grid-area: navegar;
+    background-color: #5e3ea1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: solid 3px skyblue;
+}
+
+.navegação ul {
+    list-style: none;
+    display: flex;
+}
+
+.navegação ul .log-out{
+    padding-right: 60px;
+}
+
+.navegação ul .cog {
+    margin-right: 30px;
+}
+
+.navegação ul li a{
+    text-decoration: none;
+    font-family: 'Teko-Light';
+}
+
+.navegação ul li a img{
+    padding: 8px;
+    transition: 0.2s;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.navegação ul li a img:hover {
+    background-color: skyblue;
+}
+
+.box {
+    grid-area: box;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodapé {
+    grid-area: rodapé;
+    background-color: skyblue;
+}
+
+.heart {
+    color: red;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu img {
+    padding: 50px;
+    width: 200px;
+}
+
+.rodapé {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4c3282;
+    border-top: solid 3px skyblue;
+}
+
+.rodapé .linkedin {
+    background-color: white;
+    padding: 6px;
+    margin-right: 20px;
+    transition: 0.2s;
+}
+
+.rodapé .facebook {
+    background-color: skyblue;
+    padding: 6px;
+    margin-right: 20px;
+    transition: 0.2s;
+}
+
+.rodapé .instagram {
+    background-color: orange;
+    padding: 6px;
+    transition: 0.2s;
+}
+
+.rodapé .linkedin:hover {
+    padding: 10px;
+}
+
+.rodapé .facebook:hover {
+    padding: 10px;
+}
+
+.rodapé .instagram:hover {
+    padding: 10px;
+}
+
+.subrodapé {
+    grid-area: subrodapé;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #342358;
+    color: white;
+    font-family: "Teko-Light";
+    font-size: 25px;
+}
+
+.logo {
+    background-color: #5e3ea1;
+    border-bottom: solid 3px skyblue;
+    grid-area: logo;
+}
+
+.submenu {
+    display: flex;
+    justify-content: center;
+    font-family: 'Teko-Light';
+    font-size: 50px;
+}
+
+.estudos {
+    height: 700px;
+}
+
+.usuario {
+    color: royalblue;
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+.future {
+    color: purple;
+}
+
+@media (max-width: 1700px) {
+    .submenu {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+    } 
+}
+
+@media (max-width: 700px) {
+    .submenu {
+        align-self: center;
+    }
+
+    .submenu .hashtags {
+        align-self: center;
+    }
+
+    .estudos {
+        display: none;
+    } 
+} 

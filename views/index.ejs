@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/rocket.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="logo">
+        
+    </div>
+    <% if(user) { %>
+        <nav class="navegação">
+            <ul>
+                <li class="cog">
+                    <a href="/atualizar">
+                        <img src="imgs/cog.png" alt="log-out">
+                    </a>
+                </li>
+                <li class="log-out">
+                    <a href="/logout">
+                        <img src="imgs/log-out.png" alt="log-out">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    <% } else { %>
+    <nav class="navegação">
+        <ul>
+            <li class="log-out">
+                <a href="/registro">
+                    <img src="imgs/user.png" alt="registro">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <% } %>
+    <main class="box">
+        <% if(user) { %>
+            <div class="submenu">
+                <span class="hashtags">Seja bem vindo <span class="heart">♥</span> <span class="usuario"><%= user.usuario %></span></span>
+                <span class="hashtags future">Let´s BuildTheFuture together</span>
+            </div>
+            <div class="estudos">
+                
+            </div>
+        <% } else { %> 
+        <div class="submenu">
+            <span class="hashtags">Desenvolvido com <span class="heart">♥</span> para a rocketseat</span>
+            <span class="hashtags"> <a href="https://www.instagram.com/explore/tags/buildthefuture/"> #BuildTheFuture </a> </span>
+            <span class="hashtags"> <a href="https://www.instagram.com/explore/tags/educacao/">#Educação</a></span>
+            <span class="hashtags"><a href="https://www.instagram.com/explore/tags/tecnologiadainforma%C3%A7%C3%A3o/">#Tecnologia</a></span>
+        </div>
+        <div class="estudos">
+            
+        </div>
+        <% } %>
+    </main>
+    <footer class="rodapé">
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/gabriel-mesquita-635600223/">
+                <img src="imgs/linkedin.png" alt="linkedin">
+            </a>
+        </div>
+
+        <div class="instagram">
+            <a href="https://www.instagram.com/gb.mesquita/">
+                <img src="imgs/instagram.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+    <div class="subrodapé">
+        <p>
+            © Me sigam nas redes sociais
+        </p> 
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js"></script>
+    <script src="js/animacao.js"></script>
+</body>
+</html>
